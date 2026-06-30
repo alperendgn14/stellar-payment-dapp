@@ -1,16 +1,72 @@
-# React + Vite
+# Stellar Pay - Testnet Payment dApp
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A simple Stellar payment dApp built for **Level 1 – White Belt** challenge. Connects to Freighter wallet on Stellar Testnet, displays XLM balance, and sends XLM transactions.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Wallet connect / disconnect via Freighter
+- Fetch and display XLM balance
+- Send XLM transactions on Stellar Testnet
+- Transaction feedback: success/failure state with transaction hash
 
-## React Compiler
+## Setup Instructions
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Prerequisites
 
-## Expanding the Oxlint configuration
+- [Freighter Wallet](https://freighter.app) browser extension installed
+- Node.js 18+ and npm
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+### Run locally
+
+```bash
+git clone https://github.com/alperendgn14/stellar-payment-dapp.git
+cd stellar-payment-dapp
+npm install
+npm run dev
+```
+
+Open the URL shown in your terminal (usually `http://localhost:5173`).
+
+### Testnet setup
+
+1. Install the [Freighter](https://freighter.app) extension
+2. Open Freighter → Settings → Network → switch to **Testnet**
+3. Fund your account using the [Stellar Laboratory Faucet](https://laboratory.stellar.org/#account-creator?network=testnet)
+
+## Screenshots
+
+### Wallet connected state
+
+<!-- TODO: Add screenshot of wallet connected state -->
+![Wallet connected](screenshots/connected.png)
+
+### Balance displayed
+
+<!-- TODO: Add screenshot showing XLM balance -->
+![Balance](screenshots/balance.png)
+
+### Successful testnet transaction
+
+<!-- TODO: Add screenshot of successful transaction -->
+![Transaction success](screenshots/tx-success.png)
+
+### Transaction result shown to user
+
+<!-- TODO: Add screenshot of transaction feedback with hash -->
+![Transaction result](screenshots/tx-result.png)
+
+## Tech Stack
+
+- [Vite](https://vitejs.dev/) + [React](https://react.dev/)
+- [@stellar/stellar-sdk](https://github.com/stellar/js-stellar-sdk)
+- [@stellar/freighter-api](https://github.com/stellar/freighter)
+
+## Level 1 Requirements
+
+| Requirement | Status |
+|-------------|--------|
+| Freighter wallet setup (Testnet) | ✅ |
+| Wallet connect / disconnect | ✅ |
+| XLM balance fetch and display | ✅ |
+| Send XLM transaction | ✅ |
+| Transaction feedback (success/failure, hash) | ✅ |

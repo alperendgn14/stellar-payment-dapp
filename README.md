@@ -45,11 +45,11 @@ Open the URL shown in your terminal (usually `http://localhost:5173`).
 
 ### Successful testnet transaction
 
-![Transaction success](screenshots/3.png)
+![Transaction success](screenshots/4.png)
 
 ### Transaction result shown to user
 
-![Transaction result](screenshots/4.png)
+![Transaction result](screenshots/3.png)
 
 ## Tech Stack
 

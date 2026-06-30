@@ -50,7 +50,7 @@ export async function sendXLM({ destination, amount, publicKey }) {
     .setTimeout(30)
     .build();
 
-  const { signedTransaction, error } = await signTransaction(transaction.toXDR(), {
+  const { signedTxXdr, error } = await signTransaction(transaction.toXDR(), {
     networkPassphrase,
   });
 
@@ -59,7 +59,7 @@ export async function sendXLM({ destination, amount, publicKey }) {
   }
 
   const result = await server.submitTransaction(
-    TransactionBuilder.fromXDR(signedTransaction, networkPassphrase)
+    TransactionBuilder.fromXDR(signedTxXdr, networkPassphrase)
   );
 
   return result;

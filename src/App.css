@@ -1,0 +1,272 @@
+.app {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 32px 16px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  font-size: 28px;
+  color: #6c8cff;
+}
+
+.header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.subtitle {
+  color: #7f8596;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+/* Cards */
+.card {
+  background: #13161c;
+  border: 1px solid #1f232b;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 16px;
+}
+
+/* Connect Card */
+.connect-card {
+  text-align: center;
+  padding: 48px 24px;
+}
+
+.card-icon {
+  font-size: 40px;
+  margin-bottom: 12px;
+}
+
+.connect-card h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.connect-card p {
+  color: #7f8596;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  background: #6c8cff;
+  color: #fff;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: #5a7af0;
+}
+
+.btn-secondary {
+  background: #1f232b;
+  color: #e4e7ed;
+  border: 1px solid #2a2f38;
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background: #2a2f38;
+}
+
+.btn-danger {
+  background: transparent;
+  color: #f56c6c;
+  border: 1px solid #3d1f1f;
+}
+
+.btn-danger:hover:not(:disabled) {
+  background: #1f0f0f;
+}
+
+.btn-full {
+  width: 100%;
+}
+
+/* Wallet Card */
+.wallet-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.wallet-info h2 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.badge {
+  display: inline-block;
+  background: #1a3a2a;
+  color: #4ade80;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 10px;
+  border-radius: 20px;
+  margin-bottom: 8px;
+}
+
+.address {
+  display: inline-block;
+  font-size: 13px;
+  color: #7f8596;
+  margin-bottom: 12px;
+}
+
+.balance-display {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.balance-label {
+  font-size: 12px;
+  color: #7f8596;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.balance-value {
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.wallet-actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+/* Send Card */
+.send-card h2 {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.form-group {
+  margin-bottom: 14px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  color: #9ca3af;
+  margin-bottom: 6px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px 12px;
+  background: #0b0d11;
+  border: 1px solid #1f232b;
+  border-radius: 8px;
+  color: #e4e7ed;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.form-group input:focus {
+  border-color: #6c8cff;
+}
+
+.form-group input::placeholder {
+  color: #4a4f5a;
+}
+
+/* Status Card */
+.status-card {
+  border-left: 3px solid;
+}
+
+.status-card.success {
+  border-color: #4ade80;
+}
+
+.status-card.error {
+  border-color: #f56c6c;
+}
+
+.status-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+}
+
+.status-icon {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.status-card.success .status-icon {
+  color: #4ade80;
+}
+
+.status-card.error .status-icon {
+  color: #f56c6c;
+}
+
+.tx-hash {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #7f8596;
+  word-break: break-all;
+}
+
+.tx-hash code {
+  font-size: 11px;
+}
+
+/* Faucet Card */
+.faucet-card h3 {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.faucet-card p {
+  font-size: 13px;
+  color: #7f8596;
+}
+
+/* Hint */
+.hint {
+  font-size: 12px !important;
+  margin-top: 16px !important;
+  margin-bottom: 0 !important;
+}

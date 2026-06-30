@@ -1,6 +1,6 @@
 import {
   isConnected,
-  getPublicKey,
+  requestAccess,
   signTransaction,
 } from '@stellar/freighter-api';
 import {
@@ -16,12 +16,15 @@ const server = new Horizon.Server('https://horizon-testnet.stellar.org');
 const networkPassphrase = Networks.TESTNET;
 
 export async function connectWallet() {
-  const connected = await isConnected();
-  if (!connected) {
+  const conn = await isConnected();
+  if (!conn.isConnected) {
     throw new Error('Freighter is not connected. Please install Freighter.');
   }
-  const publicKey = await getPublicKey();
-  return publicKey;
+  const { address, error } = await requestAccess();
+  if (error) {
+    throw new Error(error);
+  }
+  return address;
 }
 
 export async function getBalance(publicKey) {

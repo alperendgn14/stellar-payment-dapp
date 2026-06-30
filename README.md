@@ -37,23 +37,19 @@ Open the URL shown in your terminal (usually `http://localhost:5173`).
 
 ### Wallet connected state
 
-<!-- TODO: Add screenshot of wallet connected state -->
-![Wallet connected](screenshots/connected.png)
+![Wallet connected](screenshots/1.png)
 
 ### Balance displayed
 
-<!-- TODO: Add screenshot showing XLM balance -->
-![Balance](screenshots/balance.png)
+![Balance](screenshots/2.png)
 
 ### Successful testnet transaction
 
-<!-- TODO: Add screenshot of successful transaction -->
-![Transaction success](screenshots/tx-success.png)
+![Transaction success](screenshots/3.png)
 
 ### Transaction result shown to user
 
-<!-- TODO: Add screenshot of transaction feedback with hash -->
-![Transaction result](screenshots/tx-result.png)
+![Transaction result](screenshots/4.png)
 
 ## Tech Stack
 
